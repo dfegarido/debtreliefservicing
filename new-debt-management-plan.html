@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Debt Relief Servicing</title>
+    <title>New Debt Management Plan - Contact Us - Debt Relief Servicing</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -117,152 +117,149 @@
 
     <!-- Main Content -->
     <main id="main-content">
-        <!-- Contact Section -->
-        <section class="contact-page">
+        <!-- Contact Form Section -->
+        <section class="contact-form-page">
             <div class="container">
-                <h1>What Do You Need Help With?</h1>
-                <p class="contact-intro">Select from the options below to find answers or forward your question to a qualified representative.</p>
+                <h1>Contact Us</h1>
+                <h2>Starting a New Debt Management Plan?</h2>
+                <p class="form-intro">Need assistance getting your new DMP set up and activated? We can help! To help us provide you with an accurate, timely answer, please complete the following form with as much detailed information as possible.</p>
                 
-                <div class="contact-options">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                                <circle cx="12" cy="10" r="2"></circle>
-                                <path d="M10 14h4"></path>
-                            </svg>
+                <form class="dmp-contact-form" id="dmpContactForm">
+                    <div class="form-section">
+                        <h3>Tell us about yourself</h3>
+                        <p class="required-note">* Required Fields</p>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">* First name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">* Last name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
                         </div>
-                        <h3>New debt management plan</h3>
-                        <p>No first deposit yet? Submit DMP questions here</p>
-                        <a href="new-debt-management-plan.html" class="contact-btn">Get Help</a>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">* Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailConfirm">* Re-enter email</label>
+                                <input type="email" id="emailConfirm" name="emailConfirm" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M12 16v-4"></path>
-                                <path d="M12 8h.01"></path>
-                            </svg>
+                    <div class="form-section">
+                        <h3>How can we help?</h3>
+                        <p>Please select a topic from the list below and provide detailed information in the comments box.</p>
+                        
+                        <div class="form-group">
+                            <label for="helpTopic">* I need help with ...</label>
+                            <select id="helpTopic" name="helpTopic" required>
+                                <option value="">Please select...</option>
+                                <option value="changes">I need help making changes to my debt management plan</option>
+                                <option value="registering">I need help registering online</option>
+                                <option value="ach">I need help setting up ACH</option>
+                                <option value="signing">I need help signing my debt management agreement</option>
+                                <option value="documents">I need help sending you documents</option>
+                                <option value="creditor">I need help with a creditor question</option>
+                                <option value="username">I need help with my username or password</option>
+                                <option value="other">I need help with something else</option>
+                            </select>
                         </div>
-                        <h3>Debt management plan changes</h3>
-                        <p>Deposit changes and account questions for active DMPs</p>
-                        <a href="new-debt-management-plan.html" class="contact-btn">Get Help</a>
+                        
+                        <div class="form-group">
+                            <label for="comments">Any comments or questions?</label>
+                            <textarea id="comments" name="comments" rows="6" placeholder="Please provide as much detail as possible..."></textarea>
+                        </div>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                <line x1="1" y1="10" x2="23" y2="10"></line>
-                                <rect x="4" y="7" width="4" height="2" rx="0.5"></rect>
-                                <rect x="16" y="7" width="4" height="2" rx="0.5"></rect>
-                                <rect x="4" y="13" width="4" height="2" rx="0.5"></rect>
-                                <rect x="16" y="13" width="4" height="2" rx="0.5"></rect>
-                            </svg>
+                    <div class="form-section">
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span>Sign up for Success, our weekly email newsletter!</span>
+                            </label>
                         </div>
-                        <h3>Debt repayment assistance</h3>
-                        <p>Ask about our nonprofit debt and budget services</p>
-                        <a href="new-debt-management-plan.html" class="contact-btn">Get Help</a>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span>* I have read and agree to Debt Relief Servicing's Internet Privacy & Usage Agreement.</span>
+                            </label>
+                        </div>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                <path d="M12 2v7"></path>
-                                <path d="M12 9l3-3"></path>
-                            </svg>
-                        </div>
-                        <h3>Housing counseling</h3>
-                        <p>Questions about Debt Relief Servicing's housing counseling services</p>
-                        <a href="new-debt-management-plan.html" class="contact-btn">Get Help</a>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary btn-large">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="dmp-faqs">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <p>Listed below are questions clients ask us frequently. If you can't find the answer to a question you have or you would like to know more details, please feel free to contact us using the form.</p>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>What's a DMP?</h3>
+                        <p>A debt management plan (or DMP) is a structured repayment plan facilitated by a credit counseling agency. Most creditors will provide benefits, including a reduce interest rate and affordable monthly payment, in exchange for working with a credit counseling agency.</p>
                     </div>
                     
-                    <div class="contact-card contact-card-orange">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <path d="M9 22V12h6v10"></path>
-                                <path d="M6 8l2-4h8l2 4"></path>
-                                <path d="M4 12h16"></path>
-                                <path d="M5 16h14"></path>
-                                <path d="M8 4l-2 4h4l-2-4z"></path>
-                                <path d="M16 4l2 4h-4l2-4z"></path>
-                                <path d="M12 2v2"></path>
-                            </svg>
-                        </div>
-                        <h3>Disaster recovery services</h3>
-                        <p>Questions about resources and services for disaster survivors.</p>
-                        <a href="new-debt-management-plan.html" class="contact-btn">Get Help</a>
+                    <div class="faq-item">
+                        <h3>Is this the same thing as a consolidation loan?</h3>
+                        <p>A debt management plan is not a loan. You simply make a single payment each month which is dispersed to all your creditors. You will continue to receive monthly statements from each of your creditors.</p>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-                                <path d="M6 14h12v8H6z"></path>
-                                <line x1="6" y1="1" x2="6" y2="3"></line>
-                                <line x1="10" y1="1" x2="10" y2="3"></line>
-                                <line x1="14" y1="1" x2="14" y2="3"></line>
-                                <line x1="18" y1="1" x2="18" y2="3"></line>
-                            </svg>
-                        </div>
-                        <h3>Bankruptcy counseling</h3>
-                        <p>Questions about Debt Relief Servicing's bankruptcy education and counseling services</p>
-                        <a href="new-debt-management-plan.html" class="contact-btn">Get Help</a>
+                    <div class="faq-item">
+                        <h3>How do I begin?</h3>
+                        <p>Assistance is available 24 hours a day, seven days a week. Simply <a href="get-started.html">click here to get started</a> or give us a call at <a href="tel:8668899347">866-889-9347</a>. We look forward to helping!</p>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                <path d="M12 11h8"></path>
-                                <path d="M16 7h4"></path>
-                                <path d="M16 15h4"></path>
-                            </svg>
-                        </div>
-                        <h3>Financial education courses</h3>
-                        <p>Inquiries or questions about our educational programs</p>
-                        <a href="new-debt-management-plan.html" class="contact-btn">Get Help</a>
+                    <div class="faq-item">
+                        <h3>Will you talk to my creditors?</h3>
+                        <p>All of our counseling sessions are completely confidential. We don't report anything to credit bureaus, individual creditors, or other parties without permission. We will only contact your creditors if you decide to begin a DMP, in order to set up your repayment plan.</p>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                                <path d="M12 12l-2-1"></path>
-                                <path d="M12 12l2-1"></path>
-                                <path d="M8 8l4 2"></path>
-                                <path d="M16 8l-4 2"></path>
-                                <path d="M8 10l4 2"></path>
-                                <path d="M16 10l-4 2"></path>
-                            </svg>
-                        </div>
-                        <h3>Financial wellness programs</h3>
-                        <p>Learn more about our organizational financial wellness programs</p>
-                        <a href="new-debt-management-plan.html" class="contact-btn">Get Help</a>
+                    <div class="faq-item">
+                        <h3>Should I tell my creditors I'm starting a debt management plan?</h3>
+                        <p>Yes, you can. It is also very helpful to request that they change your due date to coincide with the payment date you have chosen for your DMP. To avoid potential conflicts, we ask that this date be moved to 14 days after your new Debt Relief Servicing due date, if possible.</p>
                     </div>
                     
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
-                        </div>
-                        <h3>Business solutions from Debt Relief Servicing</h3>
-                        <p>Inquire about B2B and partnership opportunities</p>
-                        <a href="new-debt-management-plan.html" class="contact-btn">Get Help</a>
+                    <div class="faq-item">
+                        <h3>When will my creditors be notified that I have joined a debt management plan?</h3>
+                        <p>After Debt Relief Servicing has received your first month's total deposit your creditors will be notified of your debt management plan. At that point we'll send a proposal request for a lowered payment and reduced interest rate based on individual creditor policies.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>When do I stop paying my creditors directly?</h3>
+                        <p>Keep paying each creditor by the due date until you receive confirmation that each account has been successfully set-up on the DMP. However, if that's not possible, you may decide to stop paying your creditors once you've made your first payment to Debt Relief Servicing. Keep in mind that this could cause your account to become past due if they haven't adjusted your terms yet.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>When do my creditors stop calling me?</h3>
+                        <p>Generally, the calls should stop as accounts are officially accepted onto the program. However, there may be some delays, and if you're still receiving calls after the first month of your DMP, you should connect with our Support department to review your file.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>What if I have automatic payments set up with my creditors?</h3>
+                        <p>Although we're administering your debt management plan, we're still a third party. Automatic payments can only be canceled by the account holder and should be done immediately after joining. You can do this by calling the creditor's customer service number.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>How do I know if a creditor has accepted the proposal for my debt management plan?</h3>
+                        <p>You can monitor the status of your proposals through your online account or by reviewing your monthly Debt Relief Servicing statement. Some creditors may contact you directly to let you know.</p>
                     </div>
                 </div>
             </div>
@@ -341,6 +338,24 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Form validation
+        document.getElementById('dmpContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const emailConfirm = document.getElementById('emailConfirm').value;
+            
+            if (email !== emailConfirm) {
+                alert('Email addresses do not match. Please re-enter your email.');
+                return;
+            }
+            
+            // Here you would normally submit to a server
+            alert('Thank you for contacting Debt Relief Servicing. A representative will reach out to you shortly.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
 
