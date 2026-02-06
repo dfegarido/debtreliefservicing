@@ -1216,6 +1216,1509 @@ body {
     background-color: var(--accent-color);
 }
 
+/* Online Counseling Page */
+.online-counseling-page {
+    padding: 80px 0;
+    background-color: var(--white);
+    min-height: 60vh;
+}
+
+.online-counseling-page h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark-blue);
+}
+
+.counseling-intro {
+    text-align: center;
+    font-size: 18px;
+    color: var(--dark-gray);
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.counseling-intro strong {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.counseling-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+
+.form-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--text-color);
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--purple);
+}
+
+.form-group input[type="text"]:invalid:not(:placeholder-shown),
+.form-group input[type="email"]:invalid:not(:placeholder-shown),
+.form-group input[type="tel"]:invalid:not(:placeholder-shown) {
+    border-color: #dc2626;
+}
+
+.form-help-text {
+    font-size: 14px;
+    color: var(--medium-gray);
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.checkbox-group {
+    margin-top: 20px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    cursor: pointer;
+    accent-color: var(--purple);
+}
+
+.checkbox-label span {
+    flex: 1;
+}
+
+.policy-link {
+    color: var(--purple);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.policy-link:hover {
+    color: var(--dark-blue);
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid var(--border-color);
+}
+
+.form-actions .btn-primary {
+    min-width: 200px;
+}
+
+/* Get Started Page */
+.get-started-hero {
+    background-image: url('assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 500px;
+}
+
+.get-started-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(74, 111, 165, 0.85);
+    z-index: 1;
+}
+
+.get-started-hero-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.get-started-hero-content {
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 50%;
+}
+
+.get-started-hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    color: var(--white);
+    text-align: left;
+}
+
+.get-started-hero-content .hero-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--white);
+    margin: 0;
+    text-align: left;
+}
+
+/* Get Started Main Content Section */
+.get-started-main-content {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.get-started-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.get-started-main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.get-started-content-section {
+    background-color: var(--white);
+}
+
+.get-started-content-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.get-started-content-section .section-intro {
+    text-align: left;
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.get-started-content-section p {
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.get-started-content-section .cta-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.benefits-list li {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.6;
+}
+
+.benefits-list .checkmark {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.benefits-list strong {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+/* Sidebar Styles */
+.get-started-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: sticky;
+    top: 20px;
+}
+
+.sidebar-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.sidebar-card p {
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.sidebar-card .btn-primary {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.sidebar-card-purple {
+    background-color: var(--purple);
+    padding: 0;
+    overflow: hidden;
+}
+
+.sidebar-card-purple h2 {
+    color: var(--white);
+    padding: 0 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.stress-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.stress-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.stress-content {
+    padding: 0 30px 30px;
+}
+
+.stress-content .stress-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.stress-content .stress-benefits li {
+    font-size: 16px;
+    color: #ffffff !important;
+    margin-bottom: 15px;
+    position: relative;
+    line-height: 1.7;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+}
+
+.stress-content .stress-benefits li:last-child {
+    margin-bottom: 0;
+}
+
+.stress-content .stress-benefits li::before {
+    content: "•";
+    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 12px;
+    flex-shrink: 0;
+    line-height: 1.7;
+}
+
+.stress-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+
+.stress-link:hover {
+    opacity: 0.8;
+}
+
+.get-started-cta {
+    background: linear-gradient(135deg, var(--teal) 0%, var(--dark-blue) 100%);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.get-started-cta-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.get-started-cta-content p {
+    font-size: 22px;
+    margin-bottom: 35px;
+    opacity: 0.95;
+}
+
+.btn-large {
+    padding: 18px 45px;
+    font-size: 18px;
+}
+
+.get-started-stress {
+    background-color: var(--light-gray);
+    padding: 80px 0;
+}
+
+.get-started-stress-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.get-started-stress-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.stress-benefits {
+    list-style: none;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.stress-benefits li {
+    font-size: 20px;
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.stress-benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.get-started-stress-content .btn-primary {
+    display: block;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.get-started-journey {
+    padding: 80px 0;
+    background-color: var(--dark-blue);
+}
+
+.get-started-journey h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.journey-intro {
+    text-align: center;
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.journey-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-left: 2px solid var(--dark-blue);
+}
+
+.journey-option {
+    background-color: var(--white);
+    border-right: 2px solid var(--dark-blue);
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.journey-option:last-child {
+    border-right: none;
+}
+
+.journey-option:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.journey-option:hover .journey-icon {
+    background-color: var(--accent-color);
+}
+
+.journey-option:hover h3 {
+    color: var(--accent-color);
+}
+
+.journey-option:hover .btn-primary {
+    background-color: var(--accent-color);
+}
+
+.journey-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    flex-shrink: 0;
+    transition: background-color 0.3s;
+}
+
+.journey-icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.journey-option h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-bottom: 15px;
+    line-height: 1.3;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.option-description {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.journey-option .btn-primary {
+    margin-top: auto;
+    width: 100%;
+    max-width: 200px;
+    background-color: var(--purple);
+    transition: background-color 0.3s;
+}
+
+/* Debt Management Page */
+.debt-management-hero {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.debt-management-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.debt-management-hero .hero-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--white);
+    opacity: 0.95;
+}
+
+.debt-management-intro {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.debt-management-intro p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.debt-management-section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.debt-management-section-alt {
+    background-color: var(--light-gray);
+}
+
+.debt-management-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+}
+
+.debt-management-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.debt-management-section a {
+    color: var(--purple);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.debt-management-section a:hover {
+    color: var(--accent-color);
+}
+
+.dmp-benefits,
+.dmp-unique {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.dmp-benefits li,
+.dmp-unique li {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.dmp-benefits li::before,
+.dmp-unique li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--purple);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dmp-unique li strong {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.learn-more-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.learn-more-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.learn-more-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.learn-more-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.learn-more-link {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.learn-more-link:hover {
+    color: var(--accent-color);
+}
+
+.faq-list {
+    margin-top: 40px;
+}
+
+.faq-item {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.debt-management-cta {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.debt-management-cta h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.debt-management-cta p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--white);
+    max-width: 800px;
+    margin: 0 auto 30px;
+    opacity: 0.95;
+}
+
+.debt-management-cta .btn-primary {
+    background-color: var(--purple);
+}
+
+.debt-management-cta .btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+/* Credit Counseling Page */
+.credit-counseling-hero {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.credit-counseling-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.credit-counseling-hero .hero-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--white);
+    opacity: 0.95;
+}
+
+.credit-counseling-section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.credit-counseling-section-alt {
+    background-color: var(--light-gray);
+}
+
+.credit-counseling-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+}
+
+.credit-counseling-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.counseling-cta-box {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.counseling-cta-box h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.counseling-cta-box p {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.benefit-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.benefit-link {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.benefit-link:hover {
+    color: var(--accent-color);
+}
+
+.credit-counseling-cta {
+    padding: 80px 0;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.credit-counseling-cta h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.credit-counseling-cta > p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--white);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    opacity: 0.95;
+}
+
+.credit-counseling-cta .cta-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.credit-counseling-cta .cta-option {
+    background-color: var(--white);
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.credit-counseling-cta .cta-option h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.credit-counseling-cta .cta-option .option-description {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.credit-counseling-cta .cta-option .phone-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-top: 10px;
+}
+
+.credit-counseling-cta .cta-option .btn-primary {
+    background-color: var(--purple);
+    margin-bottom: 15px;
+}
+
+.credit-counseling-cta .cta-option .btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+/* Credit Report Review Page */
+.credit-report-hero {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.credit-report-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.credit-report-hero .hero-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--white);
+    opacity: 0.95;
+}
+
+.credit-report-section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.credit-report-section-alt {
+    background-color: var(--light-gray);
+}
+
+.credit-report-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+}
+
+.credit-report-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.credit-review-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.credit-review-benefits li {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.credit-review-benefits li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--purple);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.credit-review-benefits li strong {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.credit-report-cta {
+    padding: 80px 0;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.credit-report-cta h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.credit-report-cta > p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--white);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    opacity: 0.95;
+}
+
+.credit-report-cta .cta-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.credit-report-cta .cta-option {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.credit-report-cta .cta-option h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.credit-report-cta .cta-option .option-description {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.credit-report-cta .cta-option .phone-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-top: 10px;
+}
+
+.credit-report-cta .cta-option .btn-primary {
+    background-color: var(--purple);
+    margin-bottom: 15px;
+}
+
+.credit-report-cta .cta-option .btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+/* Debt Solutions Page */
+.debt-solutions-hero {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.debt-solutions-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.debt-solutions-hero .hero-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--white);
+    opacity: 0.95;
+}
+
+section.debt-solutions-intro {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+section.debt-solutions-intro h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+section.debt-solutions-intro p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.debt-solutions-features {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.debt-solutions-features h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.debt-solutions-features .section-intro {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.debt-solutions-features .with-drs {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+.feature-item {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--white);
+}
+
+.feature-item h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.feature-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.features-cta {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features-cta .cta-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.features-cta .cta-subtext {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.debt-solutions-plans {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.debt-solutions-plans h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.debt-solutions-plans .section-intro {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.plan-card {
+    background-color: var(--light-gray);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.plan-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.plan-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.debt-solutions-process {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.debt-solutions-process h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.debt-solutions-process .section-intro {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.process-step {
+    text-align: center;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.process-step h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.process-step p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.debt-solutions-trust {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.debt-solutions-trust h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.debt-solutions-trust .section-intro {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-color);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.trust-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trust-card {
+    background-color: var(--light-gray);
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.trust-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.trust-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.trust-link {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.trust-link:hover {
+    color: var(--accent-color);
+}
+
+.debt-solutions-cta {
+    padding: 80px 0;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.debt-solutions-cta h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.debt-solutions-cta > p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--white);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    opacity: 0.95;
+}
+
+.cta-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cta-option {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cta-option h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.cta-option .option-description {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.cta-option .phone-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--purple);
+    margin-top: 10px;
+}
+
+.cta-option .btn-primary {
+    background-color: var(--purple);
+    margin-bottom: 15px;
+}
+
+.cta-option .btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
 /* Footer */
 .footer {
     background-color: var(--dark-blue);
@@ -1585,6 +3088,1073 @@ body {
     .contact-icon svg {
         width: 35px;
         height: 35px;
+    }
+
+    /* Online Counseling Page Responsive */
+    .online-counseling-page {
+        padding: 50px 0;
+    }
+
+    .online-counseling-page h1 {
+        font-size: 32px;
+    }
+
+    .counseling-intro {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .counseling-form {
+        padding: 30px 20px;
+    }
+
+    .form-section h2 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group select {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .checkbox-label {
+        font-size: 13px;
+    }
+
+    /* Get Started Page Responsive */
+    .get-started-hero {
+        min-height: 400px;
+    }
+
+    .get-started-hero-wrapper {
+        min-height: 400px;
+    }
+
+    .get-started-hero-content {
+        padding: 50px 30px;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .get-started-hero-content h1 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .get-started-hero-content .hero-subtitle {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .get-started-main-content {
+        padding: 50px 0;
+    }
+
+    .get-started-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .get-started-sidebar {
+        position: static;
+    }
+
+    .get-started-content-section h2 {
+        font-size: 28px;
+    }
+
+    .get-started-content-section p,
+    .get-started-content-section .section-intro {
+        font-size: 16px;
+    }
+
+    .benefits-list li {
+        font-size: 16px;
+    }
+
+    .sidebar-card h2 {
+        font-size: 24px;
+    }
+
+    .get-started-cta {
+        padding: 60px 0;
+    }
+
+    .get-started-cta-content h2 {
+        font-size: 32px;
+    }
+
+    .get-started-cta-content p {
+        font-size: 18px;
+    }
+
+    .get-started-stress {
+        padding: 60px 0;
+    }
+
+    .get-started-stress-content h2 {
+        font-size: 28px;
+    }
+
+    .stress-benefits li {
+        font-size: 18px;
+    }
+
+    .get-started-journey {
+        padding: 60px 0;
+    }
+
+    .get-started-journey h2 {
+        font-size: 28px;
+    }
+
+    .journey-options {
+        grid-template-columns: 1fr;
+        gap: 0;
+        border-left: none;
+    }
+
+    .journey-option {
+        padding: 30px 20px;
+        border-right: none;
+        border-bottom: 2px solid var(--dark-blue);
+    }
+
+    .journey-option:last-child {
+        border-bottom: none;
+    }
+
+    .journey-option h3 {
+        font-size: 20px;
+    }
+
+    .journey-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .journey-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Debt Management Page Responsive */
+    .debt-management-hero {
+        padding: 60px 0;
+    }
+
+    .debt-management-hero h1 {
+        font-size: 32px;
+    }
+
+    .debt-management-hero .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .debt-management-intro {
+        padding: 40px 0;
+    }
+
+    .debt-management-section {
+        padding: 40px 0;
+    }
+
+    .debt-management-section h2 {
+        font-size: 28px;
+    }
+
+    .debt-management-section p {
+        font-size: 16px;
+    }
+
+    .dmp-benefits li,
+    .dmp-unique li {
+        font-size: 16px;
+    }
+
+    .learn-more-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .learn-more-card h3 {
+        font-size: 18px;
+    }
+
+    .faq-item h3 {
+        font-size: 20px;
+    }
+
+    .debt-management-cta {
+        padding: 60px 0;
+    }
+
+    .debt-management-cta h2 {
+        font-size: 32px;
+    }
+
+    .debt-management-cta p {
+        font-size: 16px;
+    }
+
+    /* Debt Solutions Page Responsive */
+    .debt-solutions-hero {
+        padding: 60px 0;
+    }
+
+    .debt-solutions-hero h1 {
+        font-size: 32px;
+    }
+
+    .debt-solutions-hero .hero-subtitle {
+        font-size: 18px;
+    }
+
+    section.debt-solutions-intro {
+        padding: 40px 0;
+    }
+
+    section.debt-solutions-intro h2 {
+        font-size: 28px;
+    }
+
+    section.debt-solutions-intro p {
+        font-size: 16px;
+    }
+
+    .debt-solutions-features {
+        padding: 50px 0;
+    }
+
+    .debt-solutions-features h2 {
+        font-size: 28px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .debt-solutions-plans {
+        padding: 50px 0;
+    }
+
+    .debt-solutions-plans h2 {
+        font-size: 28px;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .debt-solutions-process {
+        padding: 50px 0;
+    }
+
+    .debt-solutions-process h2 {
+        font-size: 28px;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .debt-solutions-trust {
+        padding: 50px 0;
+    }
+
+    .debt-solutions-trust h2 {
+        font-size: 28px;
+    }
+
+    .trust-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .debt-solutions-cta {
+        padding: 50px 0;
+    }
+
+    .debt-solutions-cta h2 {
+        font-size: 28px;
+    }
+
+    .cta-options {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Credit Counseling Page Responsive */
+    .credit-counseling-hero {
+        padding: 60px 0;
+    }
+
+    .credit-counseling-hero h1 {
+        font-size: 32px;
+    }
+
+    .credit-counseling-hero .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .credit-counseling-section {
+        padding: 40px 0;
+    }
+
+    .credit-counseling-section h2 {
+        font-size: 28px;
+    }
+
+    .credit-counseling-section p {
+        font-size: 16px;
+    }
+
+    .counseling-cta-box {
+        padding: 30px 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .credit-counseling-cta {
+        padding: 50px 0;
+    }
+
+    .credit-counseling-cta h2 {
+        font-size: 28px;
+    }
+
+    .credit-counseling-cta .cta-options {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Credit Report Review Page Responsive */
+    .credit-report-hero {
+        padding: 60px 0;
+    }
+
+    .credit-report-hero h1 {
+        font-size: 32px;
+    }
+
+    .credit-report-hero .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .credit-report-section {
+        padding: 40px 0;
+    }
+
+    .credit-report-section h2 {
+        font-size: 28px;
+    }
+
+    .credit-report-section p {
+        font-size: 16px;
+    }
+
+    .credit-review-benefits li {
+        font-size: 16px;
+    }
+
+    .credit-report-cta {
+        padding: 50px 0;
+    }
+
+    .credit-report-cta h2 {
+        font-size: 28px;
+    }
+
+    .credit-report-cta .cta-options {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Bankruptcy Counseling Page */
+    .bankruptcy-hero {
+        background-color: var(--dark-blue);
+        color: var(--white);
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .bankruptcy-hero h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: var(--white);
+    }
+
+    .bankruptcy-hero .hero-subtitle {
+        font-size: 20px;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
+        color: var(--white);
+        opacity: 0.95;
+    }
+
+    .bankruptcy-section {
+        padding: 60px 0;
+        background-color: var(--white);
+    }
+
+    .bankruptcy-section-alt {
+        background-color: var(--light-gray);
+    }
+
+    .bankruptcy-section h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--dark-blue);
+        margin-bottom: 25px;
+    }
+
+    .bankruptcy-section p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--text-color);
+        margin-bottom: 20px;
+    }
+
+    .bankruptcy-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 30px;
+    }
+
+    .bankruptcy-option {
+        background-color: var(--light-gray);
+        padding: 30px;
+        border-radius: 12px;
+    }
+
+    .bankruptcy-option h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--dark-blue);
+        margin-bottom: 15px;
+    }
+
+    .bankruptcy-certificates {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 30px;
+    }
+
+    .certificate-card {
+        background-color: var(--white);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .certificate-card h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--dark-blue);
+        margin-bottom: 20px;
+    }
+
+    .certificate-cta {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 2px solid var(--light-gray);
+        text-align: center;
+    }
+
+    .certificate-cta p {
+        margin-bottom: 15px;
+    }
+
+    .bankruptcy-articles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .article-card {
+        background-color: var(--light-gray);
+        padding: 30px;
+        border-radius: 12px;
+    }
+
+    .article-card h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--dark-blue);
+        margin-bottom: 15px;
+    }
+
+    .article-card p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--text-color);
+        margin-bottom: 20px;
+    }
+
+    .article-link {
+        color: var(--purple);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    .article-link:hover {
+        color: var(--accent-color);
+    }
+
+    .bankruptcy-cta {
+        padding: 80px 0;
+        background-color: var(--dark-blue);
+        color: var(--white);
+    }
+
+    .bankruptcy-cta h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .bankruptcy-cta > p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--white);
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 50px;
+        opacity: 0.95;
+    }
+
+    .bankruptcy-cta .cta-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .bankruptcy-cta .cta-option {
+        background-color: var(--white);
+        padding: 40px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .bankruptcy-cta .cta-option h3 {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--dark-blue);
+        margin-bottom: 15px;
+    }
+
+    .bankruptcy-cta .cta-option .option-description {
+        font-size: 16px;
+        color: var(--text-color);
+        margin-bottom: 20px;
+    }
+
+    .bankruptcy-cta .cta-option .btn-primary {
+        background-color: var(--purple);
+    }
+
+    .bankruptcy-cta .cta-option .btn-primary:hover {
+        background-color: var(--accent-color);
+    }
+
+    /* Disaster Recovery Page */
+    .disaster-hero {
+        background-color: var(--dark-blue);
+        color: var(--white);
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .disaster-hero h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: var(--white);
+    }
+
+    .disaster-hero .hero-subtitle {
+        font-size: 20px;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
+        color: var(--white);
+        opacity: 0.95;
+    }
+
+    .disaster-section {
+        padding: 60px 0;
+        background-color: var(--white);
+    }
+
+    .disaster-section-alt {
+        background-color: var(--light-gray);
+    }
+
+    .disaster-section h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--dark-blue);
+        margin-bottom: 25px;
+    }
+
+    .disaster-section p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--text-color);
+        margin-bottom: 20px;
+    }
+
+    .disaster-components {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .component-card {
+        background-color: var(--white);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .component-card h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--dark-blue);
+        margin-bottom: 15px;
+    }
+
+    .component-card p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--text-color);
+    }
+
+    .disaster-cta {
+        padding: 80px 0;
+        background-color: var(--dark-blue);
+        color: var(--white);
+    }
+
+    .disaster-cta h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .disaster-cta > p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--white);
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 50px;
+        opacity: 0.95;
+    }
+
+    .disaster-cta .cta-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .disaster-cta .cta-option {
+        background-color: var(--white);
+        padding: 40px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .disaster-cta .cta-option h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--dark-blue);
+        margin-bottom: 25px;
+        line-height: 1.4;
+    }
+
+    .disaster-cta .cta-option .option-description {
+        font-size: 16px;
+        color: var(--text-color);
+        margin-bottom: 15px;
+    }
+
+    .disaster-cta .cta-option .phone-number {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--purple);
+        margin-top: 10px;
+    }
+
+    .disaster-cta .cta-option .btn-primary {
+        background-color: var(--purple);
+        margin-bottom: 15px;
+    }
+
+    .disaster-cta .cta-option .btn-primary:hover {
+        background-color: var(--accent-color);
+    }
+
+    /* Homebuyer, Reverse Mortgage, Student Loan Pages - Shared Styles */
+    .homebuyer-hero,
+    .reverse-mortgage-hero,
+    .student-loan-hero {
+        background-color: var(--dark-blue);
+        color: var(--white);
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .homebuyer-hero h1,
+    .reverse-mortgage-hero h1,
+    .student-loan-hero h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: var(--white);
+    }
+
+    .homebuyer-hero .hero-subtitle,
+    .reverse-mortgage-hero .hero-subtitle,
+    .student-loan-hero .hero-subtitle {
+        font-size: 20px;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
+        color: var(--white);
+        opacity: 0.95;
+    }
+
+    .homebuyer-section,
+    .reverse-mortgage-section,
+    .student-loan-section {
+        padding: 60px 0;
+        background-color: var(--white);
+    }
+
+    .homebuyer-section-alt,
+    .reverse-mortgage-section-alt,
+    .student-loan-section-alt {
+        background-color: var(--light-gray);
+    }
+
+    .homebuyer-section h2,
+    .reverse-mortgage-section h2,
+    .student-loan-section h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--dark-blue);
+        margin-bottom: 25px;
+    }
+
+    .homebuyer-section p,
+    .reverse-mortgage-section p,
+    .student-loan-section p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--text-color);
+        margin-bottom: 20px;
+    }
+
+    .homebuyer-benefits,
+    .reverse-mortgage-benefits,
+    .student-loan-benefits {
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+    }
+
+    .homebuyer-benefits li,
+    .reverse-mortgage-benefits li,
+    .student-loan-benefits li {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--text-color);
+        margin-bottom: 20px;
+        padding-left: 30px;
+        position: relative;
+    }
+
+    .homebuyer-benefits li::before,
+    .reverse-mortgage-benefits li::before,
+    .student-loan-benefits li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--purple);
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .homebuyer-benefits li strong,
+    .reverse-mortgage-benefits li strong,
+    .student-loan-benefits li strong {
+        color: var(--dark-blue);
+        font-weight: 700;
+    }
+
+    .homebuyer-cta,
+    .reverse-mortgage-cta,
+    .student-loan-cta {
+        padding: 80px 0;
+        background-color: var(--dark-blue);
+        color: var(--white);
+    }
+
+    .homebuyer-cta h2,
+    .reverse-mortgage-cta h2,
+    .student-loan-cta h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .homebuyer-cta > p,
+    .reverse-mortgage-cta > p,
+    .student-loan-cta > p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--white);
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 50px;
+        opacity: 0.95;
+    }
+
+    .homebuyer-cta .cta-options,
+    .reverse-mortgage-cta .cta-options,
+    .student-loan-cta .cta-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .homebuyer-cta .cta-option,
+    .reverse-mortgage-cta .cta-option,
+    .student-loan-cta .cta-option {
+        background-color: var(--white);
+        padding: 40px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .homebuyer-cta .cta-option h3,
+    .reverse-mortgage-cta .cta-option h3,
+    .student-loan-cta .cta-option h3 {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--dark-blue);
+        margin-bottom: 25px;
+        line-height: 1.4;
+    }
+
+    .homebuyer-cta .cta-option .option-description,
+    .reverse-mortgage-cta .cta-option .option-description,
+    .student-loan-cta .cta-option .option-description {
+        font-size: 16px;
+        color: var(--text-color);
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .homebuyer-cta .cta-option .phone-number,
+    .reverse-mortgage-cta .cta-option .phone-number,
+    .student-loan-cta .cta-option .phone-number {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--purple);
+        margin-top: 10px;
+    }
+
+    .homebuyer-cta .cta-option .btn-primary,
+    .reverse-mortgage-cta .cta-option .btn-primary,
+    .student-loan-cta .cta-option .btn-primary {
+        background-color: var(--purple);
+        margin-bottom: 15px;
+    }
+
+    .homebuyer-cta .cta-option .btn-primary:hover,
+    .reverse-mortgage-cta .cta-option .btn-primary:hover,
+    .student-loan-cta .cta-option .btn-primary:hover {
+        background-color: var(--accent-color);
+    }
+
+    /* Bankruptcy Counseling Responsive */
+    .bankruptcy-hero {
+        padding: 60px 0;
+    }
+
+    .bankruptcy-hero h1 {
+        font-size: 32px;
+    }
+
+    .bankruptcy-hero .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .bankruptcy-section {
+        padding: 40px 0;
+    }
+
+    .bankruptcy-section h2 {
+        font-size: 28px;
+    }
+
+    .bankruptcy-options {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .bankruptcy-certificates {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .bankruptcy-articles {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .bankruptcy-cta {
+        padding: 50px 0;
+    }
+
+    .bankruptcy-cta h2 {
+        font-size: 28px;
+    }
+
+    .bankruptcy-cta .cta-options {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Disaster Recovery Responsive */
+    .disaster-hero {
+        padding: 60px 0;
+    }
+
+    .disaster-hero h1 {
+        font-size: 32px;
+    }
+
+    .disaster-hero .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .disaster-section {
+        padding: 40px 0;
+    }
+
+    .disaster-section h2 {
+        font-size: 28px;
+    }
+
+    .disaster-components {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .disaster-cta {
+        padding: 50px 0;
+    }
+
+    .disaster-cta h2 {
+        font-size: 28px;
+    }
+
+    .disaster-cta .cta-options {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Homebuyer, Reverse Mortgage, Student Loan Responsive */
+    .homebuyer-hero,
+    .reverse-mortgage-hero,
+    .student-loan-hero {
+        padding: 60px 0;
+    }
+
+    .homebuyer-hero h1,
+    .reverse-mortgage-hero h1,
+    .student-loan-hero h1 {
+        font-size: 32px;
+    }
+
+    .homebuyer-hero .hero-subtitle,
+    .reverse-mortgage-hero .hero-subtitle,
+    .student-loan-hero .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .homebuyer-section,
+    .reverse-mortgage-section,
+    .student-loan-section {
+        padding: 40px 0;
+    }
+
+    .homebuyer-section h2,
+    .reverse-mortgage-section h2,
+    .student-loan-section h2 {
+        font-size: 28px;
+    }
+
+    .homebuyer-benefits li,
+    .reverse-mortgage-benefits li,
+    .student-loan-benefits li {
+        font-size: 16px;
+    }
+
+    .homebuyer-cta,
+    .reverse-mortgage-cta,
+    .student-loan-cta {
+        padding: 50px 0;
+    }
+
+    .homebuyer-cta h2,
+    .reverse-mortgage-cta h2,
+    .student-loan-cta h2 {
+        font-size: 28px;
+    }
+
+    .homebuyer-cta .cta-options,
+    .reverse-mortgage-cta .cta-options,
+    .student-loan-cta .cta-options {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
 

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Counseling - Debt Relief Servicing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to content link -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Utility Links -->
+        <div class="header-utility">
+            <div class="container">
+                <div class="utility-links">
+                    <a href="blog.html" class="blog-link">Blog</a>
+                    <a href="contact.html" class="contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Header Row -->
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-wrapper">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                            <div class="logo-icon">
+                                <div class="logo-shape logo-shape-left"></div>
+                                <div class="logo-shape logo-shape-right"></div>
+                                <div class="logo-circle"></div>
+                            </div>
+                            <div class="logo-text">
+                                <div class="logo-main-text">DEBT RELIEF</div>
+                                <div class="logo-sub-text">SERVICING<sup>®</sup></div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Right Side Actions -->
+                    <div class="header-actions">
+                        <button class="search-icon" id="searchIcon" aria-label="Search">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                        <div class="search-inline" id="searchInline" style="display: none;">
+                            <div class="search-input-wrapper">
+                                <input type="text" class="search-input" placeholder="Search Debt Relief Servicing..." id="searchInput">
+                                <button class="search-go-btn">GO</button>
+                                <button class="search-clear-btn" id="searchClear" aria-label="Clear search">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="search-orange-line"></div>
+                        </div>
+                        <a href="get-started.html" class="get-started-btn">Get Started</a>
+                        <a href="tel:8668899347" class="phone-btn">866-889-9347</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="has-dropdown">
+                        <a href="#">Debt Relief</a>
+                        <ul class="dropdown">
+                            <li><a href="credit-counseling.html">Credit Counseling</a></li>
+                            <li><a href="debt-solutions.html">Debt Solutions</a></li>
+                            <li><a href="debt-management.html">Debt Management Plan</a></li>
+                            <li><a href="#">Debt Resolution Plan</a></li>
+                            <li><a href="credit-report-review.html">Credit Report Review</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Specialty Services</a>
+                        <ul class="dropdown">
+                            <li><a href="bankruptcy-counseling.html">Bankruptcy counseling</a></li>
+                            <li><a href="disaster-recovery.html">Disaster recovery counseling</a></li>
+                            <li><a href="homebuyer-counseling.html">Homebuyer counseling</a></li>
+                            <li><a href="reverse-mortgage-counseling.html">Reverse mortgage counseling</a></li>
+                            <li><a href="student-loan-counseling.html">Student loan counseling</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Financial Education</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Blog Posts</a></li>
+                            <li><a href="#">Budget Guides</a></li>
+                            <li><a href="#">Podcast</a></li>
+                            <li><a href="#">Webinars</a></li>
+                            <li><a href="#">Workshops</a></li>
+                            <li><a href="#">Online homebuyer courses</a></li>
+                            <li><a href="#">Education for Military Families</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <section class="online-counseling-page">
+            <div class="container">
+                <h1>Begin Your Online Financial Analysis</h1>
+                <p class="counseling-intro">Whether it's saving money or saving your home, our experts are here to help you understand your options and reach your goals. Complete the following assessment and one of our certified counselors will provide recommendations personalized to your top priorities. <strong>Everything shared is 100% confidential and secure.</strong></p>
+
+                <form class="counseling-form" id="counselingForm">
+                    <!-- Basic Information Section -->
+                    <div class="form-section">
+                        <h2>Basic information</h2>
+                        
+                        <div class="form-group">
+                            <label for="firstName">* First name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">* Last name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">* Email address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmEmail">* Confirm email address</label>
+                            <input type="email" id="confirmEmail" name="confirmEmail" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">* Phone number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneType">* Phone type</label>
+                            <select id="phoneType" name="phoneType" required>
+                                <option value="">Select phone type</option>
+                                <option value="home">Home phone</option>
+                                <option value="work">Work phone</option>
+                                <option value="mobile">Mobile phone</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">* City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state">* State</label>
+                            <select id="state" name="state" required>
+                                <option value="">Select state</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="textMessages" id="textMessages">
+                                <span>I agree to receive text messages at the number provided as outlined here. Message frequency varies. Message and data rates may apply. Reply STOP to cancel. Reply HELP for help. You can view our Privacy Policy and Terms and Conditions online at www.debtreliefservicing.org/privacy. Carriers are not liable for delayed or undelivered messages.</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="electronicPolicy" id="electronicPolicy" required>
+                                <span>* I have read and agree to the <a href="#" class="policy-link">Electronic Communication Policy</a></span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span>Sign up for our educational newsletter.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Financial Goal / Challenge Section -->
+                    <div class="form-section">
+                        <h2>Financial goal / challenge</h2>
+
+                        <div class="form-group">
+                            <label for="financialGoal">What's your top financial goal?</label>
+                            <select id="financialGoal" name="financialGoal" required>
+                                <option value="">Select a goal</option>
+                                <option value="reduce-debt">Reduce or Eliminate Debt</option>
+                                <option value="create-budget">Create a budget</option>
+                                <option value="lower-payments">Lower Monthly Payments</option>
+                                <option value="increase-income">Increase household income</option>
+                                <option value="avoid-foreclosure">Avoid Foreclosure</option>
+                                <option value="avoid-eviction">Avoid Eviction</option>
+                                <option value="buy-home">Buy a Home</option>
+                                <option value="buy-car">Buy a Car</option>
+                            </select>
+                            <p class="form-help-text">Understanding your goals can help us create the best possible action plan for you.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="financialChallenge">What's your biggest financial challenge?</label>
+                            <select id="financialChallenge" name="financialChallenge" required>
+                                <option value="">Select a challenge</option>
+                                <option value="job-loss">Job loss</option>
+                                <option value="reduced-income">Reduced Income</option>
+                                <option value="excessive-credit">Used credit excessively</option>
+                                <option value="increased-expenses">Increased Expenses</option>
+                                <option value="no-budget">No budget in place</option>
+                                <option value="divorce">Divorce or Separation</option>
+                                <option value="medical">Medical Expenses</option>
+                                <option value="death">Death in Household</option>
+                                <option value="disaster">Natural Disaster</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <p class="form-help-text">The more we know about your present challenges, the better we'll be able to find the right resources and solutions for you.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zipCode">* ZIP code</label>
+                            <input type="text" id="zipCode" name="zipCode" pattern="[0-9]{5}" maxlength="5" required>
+                            <p class="form-help-text">It's helpful to know your ZIP code when reviewing your budget, because spending habits and average expenses can be different depending on where you live.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary btn-large">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-left">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <div class="social-icon-inner">
+                                <span>f</span>
+                            </div>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="X (Twitter)">
+                            <div class="social-icon-inner">
+                                <span>X</span>
+                            </div>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <div class="social-icon-inner">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                    <path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <div class="social-icon-inner">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <div class="social-icon-inner">
+                                <span>in</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links-row">
+                        <a href="#">About Debt Relief Servicing</a>
+                        <span class="separator">|</span>
+                        <a href="#">Newsroom</a>
+                        <span class="separator">|</span>
+                        <a href="#">Careers</a>
+                        <span class="separator">|</span>
+                        <a href="#">Reviews</a>
+                        <span class="separator">|</span>
+                        <a href="#">Partnerships</a>
+                    </div>
+                    <div class="footer-links-row">
+                        <a href="#">Licenses & Disclosures</a>
+                        <span class="separator">|</span>
+                        <a href="#">Privacy & Usage Agreement</a>
+                        <span class="separator">|</span>
+                        <a href="#">Sitemap</a>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>&copy; 2026 Debt Relief Servicing</p>
+                        <p>12603 Southwest Freeway, Suite 450, Stafford, TX 77477</p>
+                    </div>
+                    <div class="footer-org-info">
+                        <p>Debt Relief Servicing is a 501(c)(3) nonprofit organization.</p>
+                        <p>We do not lend money.</p>
+                        <p>NMLS ID 897900</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
